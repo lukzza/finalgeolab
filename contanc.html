@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsiv.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+    <header>
+        <section class="HeaderContainer">
+            <a href="#!"><img src="img/logo.svg" alt="" title="" /></a>
+            <ul>
+                <li><a href="#!">HOME</a></li>
+                <li><a href="#!">NEWS</a></li>
+                <li><a href="#!">ABOUT</a></li>
+                <li><a href="#!">CONTACT</a></li>
+            </ul>
+            
+            <ul class="respMenu">
+                <li><a href="#!">HOME</a></li>
+                <li><a href="#!">NEWS</a></li>
+                <li><a href="#!">ABOUT</a></li>
+                <li><a href="#!">CONTACT</a></li>
+                <li><a href="#!"><img src="img/G+.png" alt="" title="" /></a></li>
+                <li><a href="#!"><img src="img/FB.png" alt="" title="" /></a></li>
+                <li><a href="#!"><img src="img/YTB.png" alt="" title="" /></a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#!"><img src="img/G+.png" alt="" title="" /></a></li>
+                <li><a href="#!"><img src="img/FB.png" alt="" title="" /></a></li>
+                <li><a href="#!"><img src="img/YTB.png" alt="" title="" /></a></li>
+                <li><a href="#!"><img src="img/SEARCH.png" alt="" title="" /></a></li>
+            </ul>
+            <span class="respBTN">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </section>
+    </header>
+
+    <main>
+        <section class="pageHeading addColor">
+            <section>
+                <ul>
+                    <li>ABOUT</li>
+                </ul>
+            </section>
+        </section>
+        
+        <section class="map">
+            <div id="map"></div>
+        </section>
+        <form action="#!" method="get">
+
+            <section class="info">
+                <ul>
+                    <li>8 Merab Aleksidze Street,</li>
+                    <li>Tbilisi 0160, Georgia</li>
+                    <li>tel.: +332 293 12 23</li>
+                    <li>fax.: +332 244 44 44</li>
+                    <li>ontact@mail.ge</li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Name
+                            <input type="text" name="" value="" placeholder="...type your name" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            E-mail
+                            <input type="text" name="" value="" placeholder="...type your e-mail" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Subject
+                            <input type="text" name="" value="" placeholder="...type the mail subject" />
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Massage
+                            <textarea></textarea>
+                        </label>
+                    </li>
+                    <li>
+                        <button type="submit">send</button>
+                    </li>
+                </ul>
+
+            </section>
+        </form>
+        <section class="pageHeading">
+            <section>
+
+                <a href="#!">go back</a>
+                <ul>
+                    <li><a href="#!"><img src="img/fbb.png" alt="" title="" /></a></li>
+                    <li><a href="#!"><img src="img/gg.png" alt="" title="" /></a></li>
+                    <li><a href="#!"><img src="img/tt.png" alt="" title="" /></a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        
+        <section class="rightPart">
+            <section>
+                <p>©2017 hyper text murkup language</p>
+                <p>created by: ME</p>
+            </section>
+        </section>
+    </footer>
+
+    <script>
+        function initMap() {
+            var uluru = { lat: 41.7176368, lng: 44.7849318 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx3oWtpMQP9yCRkBt-o3gp3MZDjeXjocc&callback=initMap">
+    </script>
+
+</body>
+</html>
